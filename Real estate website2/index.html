@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dhanuasha Real Estate | Find Your Dream Property</title>
+
+    <meta name="description"
+          content="Dhanuasha Real Estate helps you find premium homes, apartments, villas, commercial properties and land.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">
+                <i class="fa-solid fa-building"></i>
+            </span>
+
+            <span>
+                <strong>Dhanuasha</strong>
+                <small>REAL ESTATE</small>
+            </span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="properties.html">Properties</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+
+            <a href="contact.html" class="nav-btn">
+                Enquire Now
+            </a>
+
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="eyebrow">
+                PREMIUM REAL ESTATE
+            </span>
+
+            <h1>
+                Find A Place
+                <span>You Can Call Home.</span>
+            </h1>
+
+            <p>
+                Discover exceptional properties, premium homes and
+                investment opportunities with Dhanuasha Real Estate.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="properties.html" class="btn btn-primary">
+                    Explore Properties
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="contact.html" class="btn btn-outline">
+                    Talk To An Expert
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Search Box -->
+
+    <div class="container search-container">
+
+        <div class="property-search">
+
+            <div class="search-item">
+                <label>Location</label>
+
+                <div class="search-input">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <select id="locationSearch">
+
+                        <option value="">Any Location</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="mysore">Mysore</option>
+                        <option value="tumkur">Tumkur</option>
+                        <option value="chennai">Chennai</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-item">
+
+                <label>Property Type</label>
+
+                <div class="search-input">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <select id="typeSearch">
+
+                        <option value="">Any Type</option>
+                        <option value="villa">Villa</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="commercial">Commercial</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-item">
+
+                <label>Budget</label>
+
+                <div class="search-input">
+
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                    <select id="budgetSearch">
+
+                        <option value="">Any Budget</option>
+                        <option value="50">Below ₹50 Lakh</option>
+                        <option value="100">₹50L - ₹1 Cr</option>
+                        <option value="200">₹1 Cr - ₹2 Cr</option>
+                        <option value="300">Above ₹2 Cr</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <button class="search-btn" onclick="searchProperties()">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="eyebrow">
+                WHY CHOOSE US
+            </span>
+
+            <h2>
+                Your Property Journey,
+                <span>Handled With Care.</span>
+            </h2>
+
+            <p>
+                From finding the right property to completing the
+                transaction, our team helps make your real estate
+                journey simple and transparent.
+            </p>
+
+        </div>
+
+
+        <div class="features-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-house-circle-check"></i>
+                </div>
+
+                <h3>Verified Properties</h3>
+
+                <p>
+                    Explore carefully selected properties with
+                    detailed information and transparent listings.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+
+                <h3>Trusted Guidance</h3>
+
+                <p>
+                    Our property experts guide you through every
+                    stage of your buying or selling journey.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <h3>Smart Investments</h3>
+
+                <p>
+                    Find opportunities that match your goals,
+                    lifestyle and investment requirements.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <h3>Dedicated Support</h3>
+
+                <p>
+                    Get responsive assistance from enquiry to
+                    property closing and beyond.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURED PROPERTIES ================= -->
+
+<section class="section section-light">
+
+    <div class="container">
+
+        <div class="section-top">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    FEATURED PROPERTIES
+                </span>
+
+                <h2>
+                    Explore Our
+                    <span>Featured Listings</span>
+                </h2>
+
+            </div>
+
+            <a href="properties.html" class="text-link">
+                View All Properties
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="property-grid">
+
+            <!-- Property 1 -->
+
+            <article class="property-card">
+
+                <div class="property-image">
+
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+                         alt="Luxury Villa">
+
+                    <span class="property-badge">
+                        For Sale
+                    </span>
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="property-content">
+
+                    <span class="property-type">
+                        Luxury Villa
+                    </span>
+
+                    <h3>
+                        Modern Luxury Villa
+                    </h3>
+
+                    <p class="property-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Whitefield, Bangalore
+                    </p>
+
+
+                    <div class="property-details">
+
+                        <span>
+                            <i class="fa-solid fa-bed"></i>
+                            4 Beds
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-bath"></i>
+                            4 Baths
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-ruler-combined"></i>
+                            2,850 Sq.Ft
+                        </span>
+
+                    </div>
+
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            ₹2.45 Cr
+                        </strong>
+
+                        <a href="property-details.html">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Property 2 -->
+
+            <article class="property-card">
+
+                <div class="property-image">
+
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80"
+                         alt="Premium Apartment">
+
+                    <span class="property-badge">
+                        For Sale
+                    </span>
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="property-content">
+
+                    <span class="property-type">
+                        Apartment
+                    </span>
+
+                    <h3>
+                        Premium City Apartment
+                    </h3>
+
+                    <p class="property-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Hebbal, Bangalore
+                    </p>
+
+
+                    <div class="property-details">
+
+                        <span>
+                            <i class="fa-solid fa-bed"></i>
+                            3 Beds
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-bath"></i>
+                            3 Baths
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-ruler-combined"></i>
+                            1,950 Sq.Ft
+                        </span>
+
+                    </div>
+
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            ₹1.25 Cr
+                        </strong>
+
+                        <a href="property-details.html">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Property 3 -->
+
+            <article class="property-card">
+
+                <div class="property-image">
+
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=80"
+                         alt="Beautiful House">
+
+                    <span class="property-badge">
+                        For Sale
+                    </span>
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="property-content">
+
+                    <span class="property-type">
+                        Independent House
+                    </span>
+
+                    <h3>
+                        Elegant Family Residence
+                    </h3>
+
+                    <p class="property-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Sarjapur, Bangalore
+                    </p>
+
+
+                    <div class="property-details">
+
+                        <span>
+                            <i class="fa-solid fa-bed"></i>
+                            3 Beds
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-bath"></i>
+                            3 Baths
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-ruler-combined"></i>
+                            2,200 Sq.Ft
+                        </span>
+
+                    </div>
+
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            ₹1.65 Cr
+                        </strong>
+
+                        <a href="property-details.html">
+                            View Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT PREVIEW ================= -->
+
+<section class="section">
+
+    <div class="container about-home">
+
+        <div class="about-image">
+
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80"
+                 alt="Modern Property">
+
+            <div class="experience-box">
+
+                <strong>10+</strong>
+
+                <span>
+                    Years of<br>
+                    Experience
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="eyebrow">
+                ABOUT DHANUASHA
+            </span>
+
+            <h2>
+                Building Relationships,
+                <span>One Property At A Time.</span>
+            </h2>
+
+            <p>
+                Dhanuasha Real Estate is focused on helping buyers,
+                sellers and investors make confident property
+                decisions.
+            </p>
+
+            <p>
+                We combine local market understanding, property
+                expertise and personalized service to make real
+                estate transactions easier.
+            </p>
+
+
+            <div class="about-list">
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Professional Property Assistance
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Transparent Property Information
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Buyer & Seller Support
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Investment Consultation
+                </div>
+
+            </div>
+
+
+            <a href="about.html" class="btn btn-primary">
+                Discover Our Story
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="container cta-content">
+
+        <span class="eyebrow">
+            LET'S FIND YOUR NEXT PROPERTY
+        </span>
+
+        <h2>
+            Your Dream Property
+            <span>Could Be Closer Than You Think.</span>
+        </h2>
+
+        <p>
+            Tell us what you're looking for and our team
+            will help you find suitable opportunities.
+        </p>
+
+        <a href="contact.html" class="btn btn-white">
+            Get In Touch
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-about">
+
+            <a href="index.html" class="logo footer-logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-building"></i>
+                </span>
+
+                <span>
+                    <strong>Dhanuasha</strong>
+                    <small>REAL ESTATE</small>
+                </span>
+
+            </a>
+
+            <p>
+                Helping you discover properties that match your
+                lifestyle, goals and investment plans.
+            </p>
+
+
+            <div class="social-icons">
+
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://youtube.com" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Company</h4>
+
+            <a href="about.html">About Us</a>
+            <a href="properties.html">Properties</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Services</h4>
+
+            <a href="services.html">Buy Property</a>
+            <a href="services.html">Sell Property</a>
+            <a href="services.html">Property Management</a>
+            <a href="services.html">Investment Consulting</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Contact</h4>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Bangalore, Karnataka, India
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 98765 43210
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@dhanuasha.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 Dhanuasha Real Estate. All Rights Reserved.
+            </p>
+
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<a href="https://wa.me/919876543210"
+   class="whatsapp-button"
+   target="_blank">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<button class="scroll-top" id="scrollTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

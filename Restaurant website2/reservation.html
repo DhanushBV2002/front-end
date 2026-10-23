@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservation | Dhanuasha Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-utensils"></i>
+            </span>
+
+            <div>
+                <strong>DHANUASHA</strong>
+                <small>RESTAURANT</small>
+            </div>
+
+        </a>
+
+        <nav class="navbar" id="navbar">
+
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="reservation.html" class="active">
+                Reservation
+            </a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span>RESERVATION</span>
+
+        <h1>Reserve Your Table</h1>
+
+        <p>
+            Plan your next memorable dining experience with us.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section reservation-section">
+
+    <div class="container reservation-grid">
+
+
+        <div class="reservation-info">
+
+            <span class="section-label">
+                BOOK YOUR TABLE
+            </span>
+
+            <h2>
+                We Look Forward
+                To Welcoming You.
+            </h2>
+
+            <p>
+                Complete the reservation form and our team
+                will contact you to confirm your booking.
+            </p>
+
+
+            <div class="reservation-details">
+
+                <div>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <div>
+
+                        <strong>Opening Hours</strong>
+
+                        <p>
+                            Monday - Sunday<br>
+                            11:00 AM - 11:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+
+                        <strong>Call Us</strong>
+
+                        <p>
+                            +91 98765 43210
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+
+                        <strong>Location</strong>
+
+                        <p>
+                            Tumkur, Karnataka, India
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="reservation-form-box">
+
+            <form id="reservationForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Phone Number</label>
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="+91 XXXXX XXXXX"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Date</label>
+
+                        <input
+                            type="date"
+                            name="date"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Time</label>
+
+                        <select name="time" required>
+
+                            <option value="">
+                                Select Time
+                            </option>
+
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>01:00 PM</option>
+                            <option>02:00 PM</option>
+                            <option>05:00 PM</option>
+                            <option>06:00 PM</option>
+                            <option>07:00 PM</option>
+                            <option>08:00 PM</option>
+                            <option>09:00 PM</option>
+                            <option>10:00 PM</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Number of Guests</label>
+
+                    <select name="guests" required>
+
+                        <option value="">
+                            Select Guests
+                        </option>
+
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5 Guests</option>
+                        <option>6 Guests</option>
+                        <option>7+ Guests</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Special Request</label>
+
+                    <textarea
+                        name="message"
+                        rows="4"
+                        placeholder="Any special request?"></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-dark full-width">
+
+                    Request Reservation
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <p class="form-note">
+                    * Reservation will be confirmed by our team.
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 Dhanuasha Restaurant. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

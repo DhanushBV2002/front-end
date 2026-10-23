@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Menu | Dhanuasha Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </span>
+
+                <div>
+                    <strong>DHANUASHA</strong>
+                    <small>RESTAURANT</small>
+                </div>
+
+            </a>
+
+
+            <nav class="navbar" id="navbar">
+
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="contact.html">Contact</a>
+
+                <a href="reservation.html" class="nav-button">
+                    Book a Table
+                </a>
+
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- PAGE HERO -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <span>EXPLORE OUR MENU</span>
+
+            <h1>Good Food Starts Here</h1>
+
+            <p>
+                Discover our carefully prepared selection
+                of delicious dishes.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+
+    <section class="section menu-section">
+
+        <div class="container">
+
+            <!-- CATEGORY BUTTONS -->
+
+            <div class="menu-tabs">
+
+                <button class="menu-tab active" data-category="all">
+                    All
+                </button>
+
+                <button class="menu-tab" data-category="starters">
+                    Starters
+                </button>
+
+                <button class="menu-tab" data-category="main">
+                    Main Course
+                </button>
+
+                <button class="menu-tab" data-category="pizza">
+                    Pizza & Pasta
+                </button>
+
+                <button class="menu-tab" data-category="dessert">
+                    Desserts
+                </button>
+
+                <button class="menu-tab" data-category="drinks">
+                    Drinks
+                </button>
+
+            </div>
+
+
+            <div class="menu-list">
+
+
+                <!-- ITEM -->
+
+                <div class="menu-item" data-category="starters">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=300&q=80"
+                        alt="Paneer Tikka">
+
+                    <div class="menu-item-info">
+
+                        <div>
+
+                            <h3>Paneer Tikka</h3>
+
+                            <span>STARTER</span>
+
+                        </div>
+
+                        <strong>₹249</strong>
+
+                        <p>
+                            Marinated cottage cheese grilled
+                            with aromatic spices.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-item" data-category="starters">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1563379091339-03246963d51a?auto=format&fit=crop&w=300&q=80"
+                        alt="Spring Rolls">
+
+                    <div class="menu-item-info">
+
+                        <div>
+
+                            <h3>Crispy Spring Rolls</h3>
+
+                            <span>STARTER</span>
+
+                        </div>
+
+                        <strong>₹199</strong>
+
+                        <p>
+                            Crispy rolls filled with fresh
+                            vegetables and herbs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-item" data-category="main">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=300&q=80"
+                        alt="Momos">
+
+                    <div class="menu-item-info">
+
+                        <div>
+
+                            <h3>Special Momos</h3>
+
+                            <span>MAIN COURSE</span>
+
+                        </div>
+
+                        <strong>₹229</strong>
+
+                        <p>
+                            Handmade momos served with
+                            our signature spicy dip.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-item" data-category="main">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=300&q=80"
+                        alt="Indian Curry">
+
+                    <div class="menu-item-info">
+
+                        <div>
+
+                            <h3>Chef's Special Curry</h3>
+
+                            <span>MAIN COURSE</span>
+
+                        </div>
+
+                        <strong>₹329</strong>
+
+                        <p>
+                            Rich aromatic curry prepared
+                            using traditional spices.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-item" data-category="pizza">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=300&q=80"
+                        alt="Pizza">
+
+                    <div class="menu-item-info">
+
+                        <div>
+
+                            <h3>Dhanuasha Special Pizza</h3>
+
+                            <span>PIZZA</span>
+
+                        </div>
+
+                        <strong>₹349</strong>
+
+                        <p>
+                            Fresh toppings, premium cheese
+                            and signature sauce.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-item" data-category="pizza">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=300&q=80"
+                        alt="Pasta">
+
+                    <div class="menu-item-info">
+
+                        <div>
+
+                            <h3>Creamy Alfredo Pasta</h3>
+
+                            <span>PASTA</span>
+
+                        </div>
+
+                        <strong>₹299</strong>
+
+                        <p>
+                            Creamy pasta with herbs,
+                            parmesan and fresh vegetables.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-item" data-category="dessert">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=300&q=80"
+                        alt="Dessert">
+
+                    <div class="menu-item-info">
+
+                        <div>
+
+                            <h3>Chocolate Dessert</h3>
+
+                            <span>DESSERT</span>
+
+                        </div>
+
+                        <strong>₹199</strong>
+
+                        <p>
+                            Rich chocolate dessert with
+                            a smooth creamy texture.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-item" data-category="drinks">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=300&q=80"
+                        alt="Fresh Juice">
+
+                    <div class="menu-item-info">
+
+                        <div>
+
+                            <h3>Fresh Fruit Cooler</h3>
+
+                            <span>DRINK</span>
+
+                        </div>
+
+                        <strong>₹149</strong>
+
+                        <p>
+                            Refreshing fruit drink prepared
+                            with fresh seasonal fruits.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="mini-cta">
+
+        <div class="container">
+
+            <div>
+
+                <span>READY FOR A DELICIOUS EXPERIENCE?</span>
+
+                <h2>Reserve Your Table Today</h2>
+
+            </div>
+
+            <a href="reservation.html" class="btn btn-primary">
+                Book a Table
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Dhanuasha Restaurant. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
